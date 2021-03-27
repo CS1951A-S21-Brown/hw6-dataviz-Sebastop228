@@ -19,10 +19,54 @@
             <div id="graph2"></div><br/>
         </div>
         <div class="col-lg-6">
+            <div class="btns">
+            <button type="button" class="btn btn-info" onclick="setDataGraph3(0)">By Goal Differential</button>
+            <button type="button" class="btn btn-info" onclick="setDataGraph3(1)">By Win Percentage</button>
+            </div>
             <div id="graph3"></div>
         </div>
     </div>
+    <div class="questions">
+        <h1><b>Written Questions</b></h1>
+        <h3><b>Questions about the dashboard</b></h3>
+        <p>1. I chose to create my dashboard using the Football game dataset, "football.csv", with a graph to answer each of the required questions.<br>
+            My first graph displays the number of games played each year over a five-year period: specifically, it does so in the 2010-2014 range.
+            This a direct representation of my boss' request to see the number of football games per year.<br>
+            My second graph allows my boss to visualize the 10 top winning nations, by displaying the top 10 teams with the highest win percentage over 75 games
+            or more. This criteria was added to stop any skewing of the data from teams that have only played a very small number of games, with great success.
+            A connected scatterplot allows to see the general decreasing trend of these top nations, and a user can hover over one of the dots to see the exact
+            percentage.<br>
+            The third graph is actually comprised of two, as we have taken two approaches to identifying the top performing nations over the last two world cups.
+            The first method is to display the top 10 teams by goal differential (goals scored - goals scored against) over this period, in order to see the teams with the best performing
+            attacks and defences. The second is to see display the top 10 teams by win percentage over this period. We notice a significant overlap between the top 10
+            teams observed with both methods, allowing us to conclude we've satisfyingly answered our boss' question.<br><br>
+
+            2. D3 was helpful and improved my visualizations in the following 3 ways: first, it allows for a wide range of options in the ways to manipulate the data and 
+            in the possible representations we can display. Second, it allows for interactivity - which most other methods of data representation do not - which can be 
+            a very effective way to get an audience enthused about your visualizations. Third, D3 is compatible with HTML, making it easy to embed visualizations in web pages,
+            which is important in today's internet-heavy society.<br><br>
+
+            3. D3 is NOT always the best tool for visualizations for the following three reasons: first, it can be time-consuming and difficult to generate visualizations with,
+            which can make other tools, such as excel, a much more attractive option for most graphs. Second, it requires somewhat extensive coding knowledge, specifically of javascript
+            and HTML, making it a rather inaccesible method of data visualization. Third, it requires the data to be entered in a format it can be read in and manipulated, such
+            as a csv file, which is not always the case.
+        <h3><b>Accessible Data Visualization</b></h3>
+        </p>4. While many - if not most - users would find my dashboard accessible, some may have more difficulty with it. The "Accessible Data Visualization" reading
+            mentions three 4 types of color blindness, all centered around the color green. As I'd chosen to make my graphs green - so it would evoke a football pitch and
+            follow the theme of the data - I may have inadvertantly made my dashboard inaccesible to some. My titles are descriptive of what my graphs are displaying, and thus
+            a visually-impaired user with a text-to-speech software would still be able to know what it is I'm representing. However, they'd be unable to know what the conclusions 
+            of the data are; thus, still going off the "Accessible Data Visualization", a summary attached to each draft in which I explain the conclusions to be drawn from it would
+            allow for users using these text-to-speech software to get a fuller experience from my dashboard. Similarly, adding an alt text would be useful. Despite these flaws,
+            I believe the rest of my dashboard is descriptive enough to provide a full experience for most users.<br><br>
+
+            5. An important stage I could have made my dashboard more accessible was when I was choosing the color of my graphs. I chose green to follow the theme of soccer, hoping it would
+            evoke a soccer pitch. I didn't think it would be a difficult color for people with visual impairments, and this lack of thought stopped me from taking the step to making my 
+            dashboard more accessible. Additionally, once I'd completed my graph, factors such as exhaustion and feeling burnt out stopped me from taking the extra steps of adding alt text 
+            and graph summaries.
+    </div>
     <!--Feel free to add more JavaScript files as needed-->
     <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="graph2.js"></script>
+    <script type="text/javascript" src="graph3.js"></script>
 </body>
 </html>

@@ -10,3 +10,18 @@
 }
 
 /* Include any custom CSS styling here! */
+/* .btn btn-info{
+
+} */
+
+.myCircle:hover {
+    stroke: black;
+  }
+
+.questions{
+    padding-left: 20px;
+}
+
+.btns{
+    padding-left: 250px;
+}
